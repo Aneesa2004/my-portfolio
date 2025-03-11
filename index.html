@@ -21,51 +21,71 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hey there! I'm Aneesa Tariq, a web developer who enjoys building clean, functional, and user-friendly websites. I work with HTML, CSS, and JavaScript, and I'm currently learning more about web storage and Git.</p>
-    </section>
+        <p>I'm Aneesa Tariq, a web developer who enjoys building clean, functional, and user-friendly websites. I work with HTML, CSS, and JavaScript, and I'm currently learning more about web storage and Git.</p>
+      </section>         
 
     <section id="projects">
         <h2>My Projects</h2>
-
-        <div class="project-gallery">
-
-            <div class="project-item">
-                <h3>Project 1</h3>
-                <button class="toggle-details-btn">Show Details</button>
-                <div class="project-details hidden">
-                    <p>This is where details about Project 1 will go.</p>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>Project 2</h3>
-                <button class="toggle-details-btn">Show Details</button>
-                <div class="project-details hidden">
-                    <p>This is where details about Project 2 will go.</p>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <h3>Project 3</h3>
-                <button class="toggle-details-btn">Show Details</button>
-                <div class="project-details hidden">
-                    <p>This is where details about Project 3 will go.</p>
-                </div>
-            </div>
-
-        </div>
+        <div class="project-container">
+          <div class="project">
+            <h3>Project 1</h3>
+            <button>Show Details</button>
+          </div>
+          <div class="project">
+            <h3>Project 2</h3>
+            <button>Show Details</button>
+          </div>
+          <div class="project">
+            <h3>Project 3</h3>
+            <button>Show Details</button>
+         
     </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <canvas id="skillsChart" width="300" height="200"></canvas>
+      </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
-        <p>If you have any questions, please reach me at:<br>aneesatariq2004@gmail.com</p>
-    </section>
+      
+        <p>If you have any questions, feel free to reach out by filling out the form below or email me at:<br>
+          <a href="mailto:Aneesatariq2004@gmail.com">Aneesatariq2004@gmail.com</a>
+        </p>
+      
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <span class="error" id="nameError"></span>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <span class="error" id="emailError"></span>
+          </div>
+      
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+      
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      
 
     <footer>
         <p>&copy; 2025 Aneesa Tariq</p>
     </footer>
 
+    <button id="scrollTopBtn" style="position: fixed; bottom: 20px; right: 20px;">Top</button>
+
     <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 </body>
 </html>

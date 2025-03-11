@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
 
         let isValid = true;
 
@@ -55,9 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (isValid) {
-            // You can now submit the form or simulate submission
             alert('Form submitted successfully!');
-            form.reset(); // Reset the form after submission
+            form.reset(); 
         }
     });
 });

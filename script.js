@@ -105,3 +105,10 @@ scrollTopBtn.addEventListener("click", () => {
         }
     });
 });
+
+// Dark Mode Toggle
+const darkToggle = document.getElementById("darkModeToggle");
+
+darkToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});

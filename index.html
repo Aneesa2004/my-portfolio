@@ -1,92 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 🌙 Dark Mode Toggle -->
   <button id="darkModeToggle">Toggle Dark Mode</button>
 
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Aneesa Tariq, a web developer who enjoys building clean, functional, and user-friendly websites. I work with HTML, CSS, and JavaScript, and I'm currently learning more about web storage and Git.</p>
-      </section>         
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Aneesa Tariq, a web developer who enjoys building clean, functional,
+      and user-friendly websites. I work with HTML, CSS, and JavaScript, and
+      I'm currently learning more about web storage and Git.
+    </p>
+  </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-          <div class="project">
-            <h3>Project 1</h3>
-            <button>Show Details</button>
-          </div>
-          <div class="project">
-            <h3>Project 2</h3>
-            <button>Show Details</button>
-          </div>
-          <div class="project">
-            <h3>Project 3</h3>
-            <button>Show Details</button>
-         
-    </section>
+  <!-- 🔍 Project Filter Buttons -->
+  <div id="filter-buttons">
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="javascript">JavaScript</button>
+    <button class="filter-btn" data-category="html">HTML/CSS</button>
+    <button class="filter-btn" data-category="react">React</button>
+  </div>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <canvas id="skillsChart" width="300" height="200"></canvas>
-      </section>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+      <div class="project" data-category="javascript">
+        <h3>To-Do List App</h3>
+        <button>Show Details</button>
+      </div>
+      <div class="project" data-category="html">
+        <h3>Personal Blog Page</h3>
+        <button>Show Details</button>
+      </div>
+      <div class="project" data-category="react">
+        <h3>Weather App (React)</h3>
+        <button>Show Details</button>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-      
-        <p>If you have any questions, feel free to reach out by filling out the form below or email me at:<br>
-          <a href="mailto:Aneesatariq2004@gmail.com">Aneesatariq2004@gmail.com</a>
-        </p>
-      
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-            <span class="error" id="nameError"></span>
-          </div>
-      
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-            <span class="error" id="emailError"></span>
-          </div>
-      
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-            <span class="error" id="messageError"></span>
-          </div>
-      
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
-      
+  <section id="skills">
+    <h2>My Skills</h2>
+    <canvas id="skillsChart" width="300" height="200"></canvas>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Aneesa Tariq</p>
-    </footer>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      If you have any questions, feel free to reach out by filling out the form
+      below or email me at:<br />
+      <a href="mailto:Aneesatariq2004@gmail.com">Aneesatariq2004@gmail.com</a>
+    </p>
 
-    <button id="scrollTopBtn" style="position: fixed; bottom: 20px; right: 20px;">Top</button>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+        <span class="error" id="nameError"></span>
+      </div>
 
-    <script src="script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+        <span class="error" id="emailError"></span>
+      </div>
 
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+        <span class="error" id="messageError"></span>
+      </div>
 
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aneesa Tariq</p>
+  </footer>
+
+  <button id="scrollTopBtn" style="position: fixed; bottom: 20px; right: 20px;">Top</button>
+
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

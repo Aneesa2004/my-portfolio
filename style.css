@@ -226,4 +226,21 @@
     cursor: pointer;
     z-index: 999;
   }
+  #filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .filter-btn:hover {
+    background-color: #555;
+  }
   
